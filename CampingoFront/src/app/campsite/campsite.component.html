@@ -1,0 +1,39 @@
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+  style="min-height: 100vh; background-size: cover; background-image: url('assets/Front Template/img/hero/campingo.jpg');">
+  <!-- Search Box -->
+  <div class="row">
+    <div class="col-xl-12">
+      <!-- form -->
+  <form  class="search-box">
+        
+    <table class="table">
+      <thead class="bg-dark text-w text-white">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Location</th>
+          <th scope="col">Description</th>
+          <th scope="col">MoyRate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of dataArray ">
+          <th scope="row">{{item.IdCampsites}}</th>
+          <td>{{item.name}}</td>
+          <td>{{item.location}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.moyRate}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+       
+      </form>
+    </div>
+  </div>
+
+
+</section>
